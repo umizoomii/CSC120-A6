@@ -4,6 +4,12 @@ public class Building {
     protected String address = "<Address Unknown>";
     protected int nFloors = 1;
 
+    /**
+     * Constructor for building class
+     * @param name: the name of the building
+     * @param address: the building's address
+     * @param nFloors: the number of floors
+     */
     public Building(String name, String address, int nFloors) {
         if (name != null) { this.name = name; }
         if (address != null) { this.address = address; } 
@@ -13,18 +19,33 @@ public class Building {
         this.nFloors = nFloors;
     }
 
+    /**
+     * Accessor for building's name
+     * @return the name of the building
+     */
     public String getName() {
         return this.name;
     }
 
+    /**
+     * Accessor for building's address
+     * @return the building's address
+     */
     public String getAddress() {
         return this.address;
     }
 
+    /**
+     * Accessor for building's floors
+     * @return the number of floors the building has
+     */
     public int getFloors() {
         return this.nFloors;
     }
 
+    /**
+     * toString method for Building class
+     */
     public String toString() {
         return this.name + " is a " + this.nFloors + "-story building located at " + this.address;
     }
